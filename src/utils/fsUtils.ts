@@ -187,7 +187,7 @@ function isSubsequence(sub: string, str: string): boolean {
 }
 
 // ── Validate filename ────────────────────────────────
-const INVALID_CHARS_REGEX = /[\/\\:*?"<>|]/;
+const INVALID_CHARS_REGEX = /[\\/:*?"<>|]/;
 const MAX_FILENAME_LENGTH = 255;
 
 /**
