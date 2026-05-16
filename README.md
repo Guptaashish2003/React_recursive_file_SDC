@@ -5,6 +5,7 @@ A modern, VS Code-inspired file management system built with React, TypeScript, 
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue?logo=typescript)
 ![React](https://img.shields.io/badge/React-18+-61dafb?logo=react)
 ![localStorage](https://img.shields.io/badge/Persistence-localStorage-orange)
+<img width="2256" height="1377" alt="image" src="https://github.com/user-attachments/assets/7d6e1cb3-78c2-426b-9080-ce599bcc01a1" />
 
 ---
 
