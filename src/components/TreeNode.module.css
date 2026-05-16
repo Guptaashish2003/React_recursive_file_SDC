@@ -1,0 +1,294 @@
+.wrapper {
+  user-select: none;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 28px;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  margin: 1px 4px;
+  padding-right: 8px;
+  color: var(--text-primary);
+  font-size: 13px;
+  outline: none;
+  transition: background var(--transition);
+  position: relative;
+}
+
+.row:hover {
+  background: var(--bg-hover);
+}
+
+.row:focus-visible {
+  box-shadow: inset 0 0 0 1.5px var(--accent);
+}
+
+.selected {
+  background: var(--bg-active) !important;
+  color: var(--text-primary);
+}
+
+.dragOver {
+  background: var(--accent-soft) !important;
+  box-shadow: inset 0 0 0 1.5px var(--accent);
+}
+
+.chevron {
+  display: flex;
+  align-items: center;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  width: 14px;
+}
+
+.chevronSpacer {
+  width: 14px;
+  flex-shrink: 0;
+}
+
+.nodeIcon {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.iconFolder {
+  color: #f59e0b;
+}
+
+.fileEmoji {
+  font-size: 13px;
+  line-height: 1;
+}
+
+.label {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.untitled {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.emptyHint {
+  font-size: 11px;
+  color: var(--text-muted);
+  padding-top: 2px;
+  padding-bottom: 4px;
+  font-style: italic;
+}
+
+/* Add these to your existing CSS */
+
+.wrapper {
+  position: relative;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 3px;
+  transition: background-color 0.1s ease;
+  outline: none;
+}
+
+.row:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.row.selected {
+  background: #094771;
+  color: #fff;
+}
+
+.row.selected:hover {
+  background: #094771;
+}
+
+.row.dragOver {
+  background: rgba(9, 71, 113, 0.3);
+  border: 1px dashed #0078d4;
+  border-radius: 3px;
+}
+
+.row.editing {
+  padding: 2px 8px;
+}
+
+.chevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  color: #888;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.chevron:hover {
+  color: #fff;
+}
+
+.chevronSpacer {
+  width: 16px;
+  flex-shrink: 0;
+}
+
+.nodeIcon {
+  display: flex;
+  align-items: center;
+  margin-right: 4px;
+  flex-shrink: 0;
+}
+
+.iconFolder {
+  color: #dcb67a;
+}
+
+.fileEmoji {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.label {
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 13px;
+}
+
+.untitled {
+  color: #666;
+  font-style: italic;
+}
+
+.emptyHint {
+  padding: 4px 0;
+  color: #666;
+  font-size: 12px;
+  font-style: italic;
+}
+
+/* Drag visual feedback */
+.row[draggable="true"]:active {
+  cursor: grabbing;
+}
+
+/* Focus ring for accessibility */
+.row:focus-visible {
+  outline: 2px solid #0078d4;
+  outline-offset: -2px;
+}
+/* Add to src/components/FileExplorer/TreeNode.module.css */
+
+.wrapper {
+  position: relative;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 3px;
+  transition: background-color 0.1s ease;
+  outline: none;
+}
+
+.row:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.row.selected {
+  background: #094771;
+  color: #fff;
+}
+
+.row.dragOver {
+  background: rgba(9, 71, 113, 0.3);
+  border: 1px dashed #0078d4;
+  border-radius: 3px;
+}
+
+.row.editing {
+  padding: 2px 8px;
+}
+
+.chevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  color: #888;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.chevron:hover {
+  color: #fff;
+}
+
+.chevronSpacer {
+  width: 16px;
+  flex-shrink: 0;
+}
+
+.nodeIcon {
+  display: flex;
+  align-items: center;
+  margin-right: 4px;
+  flex-shrink: 0;
+}
+
+.iconFolder {
+  color: #dcb67a;
+}
+
+.fileEmoji {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.label {
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 13px;
+}
+
+.untitled {
+  color: #666;
+  font-style: italic;
+}
+
+.emptyHint {
+  padding: 4px 0;
+  color: #666;
+  font-size: 12px;
+  font-style: italic;
+}
+
+/* Focus ring for accessibility */
+.row:focus-visible {
+  outline: 2px solid #0078d4;
+  outline-offset: -2px;
+}
