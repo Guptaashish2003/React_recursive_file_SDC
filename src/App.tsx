@@ -406,6 +406,7 @@ function SearchResultsDropdown({
             key={node.id}
             className="search-result-item"
             role="option"
+            aria-selected={false}
             onClick={() => {
               onSelect(node.id);
               onClose();

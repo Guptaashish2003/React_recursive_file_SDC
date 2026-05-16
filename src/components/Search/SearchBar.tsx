@@ -192,7 +192,7 @@ export function SearchBar({
           onKeyDown={handleKeyDown}
           placeholder={placeholder}
           aria-label="Search files"
-          aria-expanded={isOpen}
+        //   aria-expanded={isOpen}
           aria-controls={isOpen ? 'search-results' : undefined}
           aria-autocomplete="list"
           aria-activedescendant={highlightedIndex >= 0 ? `search-result-${highlightedIndex}` : undefined}
